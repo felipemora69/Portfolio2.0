@@ -1,0 +1,191 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Background styles */
+
+.backG {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, hsl(0, 0%, 0%), hsla(0, 4%, 5%, 0.918)), url(imagenes/fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #183D3D;
+    z-index: 1000;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.navbar .logo {
+    margin-right: 500px;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: text-decoration 0.3s;
+}
+
+.nav-links a:hover {
+    color: #93B1A6;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 0.18em;
+    text-decoration-skip-ink: none;
+}
+
+/* Contact Form styles */
+
+#contact-form {
+    padding: 110px 20px 20px 20px;
+    color: #fff;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    width: 900px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+}
+
+#contact-form h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 45%;
+    position: relative;
+    z-index: 2;
+}
+
+.form-group-full {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.form-group label,
+.form-group-full label {
+    position: absolute;
+    left: 15px;
+    pointer-events: none;
+    transition: all 0.3s ease-out;
+    color: #fff;
+    transform-origin: top left;
+    padding: 0 5px;
+    background-color: rgba(0, 0, 0, 0); /* Transparent background initially */
+}
+
+.form-group input,
+.form-group textarea,
+.form-group-full input,
+.form-group-full textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+
+.form-group span,
+.form-group-full span {
+    color: red;
+    margin-left: 5px;
+}
+
+.form-group input:focus ~ label,
+.form-group textarea:focus ~ label,
+.form-group-full input:focus ~ label,
+.form-group-full textarea:focus ~ label {
+    background-color: #183D3D; /* Background color when focused */
+    padding: 0 5px;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #183D3D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #5C8374;
+}
+
+
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #93b1a63a;
+    color: #fff;
+    position: relative;
+    z-index: 3;
+}
+
+.logo-foot img {
+    width: 100px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.copy p {
+    font-size: 14px;
+    color: #93B1A6;
+}
