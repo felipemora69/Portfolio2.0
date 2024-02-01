@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     formGroups.forEach(input => {
         input.addEventListener('focus', function() {
             const label = this.parentElement.querySelector('label');
-            label.style.transform = 'translateY(-25px)'; // Updated line
+            label.style.transform = 'translateY(-5px)'; // Updated line
             label.style.fontSize = '12px';
         });
 
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (input.value !== '') {
             const label = input.parentElement.querySelector('label');
-            label.style.transform = 'translateY(-25px)'; // Updated line
+            label.style.transform = 'translateY(-8px)'; // Updated line
             label.style.fontSize = '12px';
         }
     });
