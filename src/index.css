@@ -59,14 +59,18 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.05);
 }
 
+/* -------------------------- Icon Footer */
+
 .social-icon {
   color: var(--dark);
   transition: color 0.3s ease-in-out;
 }
 
 .social-icon:hover {
-  color: var(--primary);
+  color: var(--background);
 }
+
+/* --------------------------Contact Form */
 
 .contact-form input,
 .contact-form textarea {
@@ -89,9 +93,15 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary:hover {
   background-color: var(--highlight);
   border-color: var(--highlight);
+  color: var(--dark);
 }
 
-/* Hide the scroll bar from the featured projects in home section */
+.custom-padding {
+  padding-top: 8rem;
+  padding-bottom: 6.6rem;
+}
+
+/* ------------------Hide the scroll bar featured projects section */
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -101,14 +111,14 @@ h1, h2, h3, h4, h5, h6 {
   scrollbar-width: none;
 }
 
-/* About me img hover */
-img:hover {
+/* -----------About me img hover */
+.img-about:hover {
   transform: scale(0.95);
   transition: transform 0.3s ease-in-out;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Button Style */
+/* ----------Button Style */
 .see-more-btn {
   background-color: #5C6BC0;
   color: white;
@@ -125,7 +135,6 @@ img:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover Animation */
 .see-more-btn:hover {
   background-color: #3f51b5;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);

@@ -19,12 +19,12 @@ const Collaboration = () => {
         </motion.div>
 
         <Row className="align-items-center">
-          <Col md={6} className="mb-4 mb-md-0">
-            <div style={{ height: '400px' }}>
-            <ThreeScene />
+          <Col md={6}>
+            <div style={{ top: '70px', left: '-50px', position: 'absolute', height: '715px', width: '1380px' }}>
+              <ThreeScene />
             </div>
           </Col>
-          <Col md={6}>
+          <Col md={6} style={{ zIndex: 10 }} >
             <Form className="contact-form bg-white p-4 rounded-lg shadow-sm">
               <Form.Group className="mb-3">
                 <Form.Label>Name</Form.Label>
@@ -39,7 +39,7 @@ const Collaboration = () => {
                 <Form.Control as="textarea" rows={4} placeholder="Tell me about your project" />
               </Form.Group>
               <Button variant="primary" type="submit" className="w-100">
-                Send Proposal
+                Submit
               </Button>
             </Form>
           </Col>

@@ -14,13 +14,13 @@ const Footer = () => {
         <p className="mb-2 text-[#E8F2F5]">Located in Calgary, AB from Colombia</p>
         <p className="mb-4 text-[#E8F2F5]">+1 (403) 714-6577</p>
         <div className="flex justify-center gap-4 mb-4">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <a href="https://github.com/felipemora69" target="_blank" rel="noopener noreferrer" className="social-icon">
             <Github size={24} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <a href="https://www.linkedin.com/in/felipe-mora92/" target="_blank" rel="noopener noreferrer" className="social-icon">
             <Linkedin size={24} />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <a href="https://www.instagram.com/felipemora69/" target="_blank" rel="noopener noreferrer" className="social-icon">
             <Instagram size={24} />
           </a>
         </div>

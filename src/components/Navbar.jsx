@@ -6,6 +6,14 @@ import logo from '../assets/images/m-logo.png';
 const Navbar = () => {
   const location = useLocation();
 
+  const handleLogoClick = () => {
+    if (location.pathname === '/') {
+      window.location.reload();
+    } else {
+      window.location.href = '/';
+    }
+  };
+
   return (
     <BsNavbar expand="lg" className="py-2 shadow-sm bg-[#2C8780]">
       <Container>
@@ -16,13 +24,6 @@ const Navbar = () => {
         <BsNavbar.Toggle aria-controls="basic-navbar-nav" />
         <BsNavbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link 
-              as={Link} 
-              to="/"
-              className={location.pathname === '/' ? 'active' : ''}
-            >
-              Home
-            </Nav.Link>
             <Nav.Link 
               as={Link} 
               to="/projects"

@@ -127,7 +127,7 @@ const Home = () => {
                 <img
                   src="/images/aboutme.png"
                   alt="About"
-                  className="rounded-lg shadow-lg transform transition-all duration-300 hover:scale-95 hover:shadow-xl cursor-pointer"
+                  className="img-about rounded-lg shadow-lg transform transition-all duration-300 hover:scale-95 hover:shadow-xl cursor-pointer"
                 />
               </motion.div>
               </Col>
@@ -180,16 +180,16 @@ const Home = () => {
 
 
       {/* Contact Section */}
-      <section className="py-20 bg-light">
+      <section className="custom-padding bg-light">
         <Container>
           <Row>
             <Col md={6}>
               <h2 className="text-4xl mb-3">Let's Work Together</h2>
-              <div className="mb-2" style={{ height: '300px' }}>
+              <div className="mb-3" style={{ top: '2175px', left: '-50px', position: 'absolute', height: '610px', width: '1380px' }}>
                 <ThreeScene />
               </div>
             </Col>
-            <Col md={6}>
+            <Col md={6} style={{ zIndex: 10 }}>
               <Form className="contact-form">
                 <Form.Group className="mb-3">
                   <Form.Label>Name</Form.Label>
@@ -203,7 +203,7 @@ const Home = () => {
                   <Form.Label>Message</Form.Label>
                   <Form.Control as="textarea" rows={4} placeholder="Your message" />
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button variant="primary" type="button" as="a" href="mailto:felipe.moraa13@gmail.com?subject=Let's%20Connect!" >
                   Send Message
                 </Button>
               </Form>
