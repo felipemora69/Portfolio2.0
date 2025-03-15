@@ -21,14 +21,12 @@ const Home = () => {
   };
 
   const projects = [
-    { id: 1, title: 'Project 1', image: '/images/project_1.jpg', description: 'A modern web application'  },
-    { id: 2, title: 'Project 2', image: '/images/project_1.jpg', description: 'Brand identity design' },
-    { id: 3, title: 'Project 3', image: 'https://source.unsplash.com/800x600/?design,creative', description: 'Brand identity design' },
-    { id: 4, title: 'Project 4', image: 'https://source.unsplash.com/800x600/?design,creative', description: 'Brand identity design' },
-    { id: 5, title: 'Project 5', image: 'https://source.unsplash.com/800x600/?design,creative', description: 'Brand identity design' },
-    { id: 6, title: 'Project 6', image: 'https://source.unsplash.com/800x600/?design,creative', description: 'Brand identity design' },
-    { id: 7, title: 'Project 7', image: 'https://source.unsplash.com/800x600/?design,creative', description: 'Brand identity design' },
-    { id: 8, title: 'Project 8', image: 'https://source.unsplash.com/800x600/?design,creative', description: 'Brand identity design' },
+    { id: 1, title: 'BrewNation', image: '/images/project_1.jpg', description: 'Web application that allows users to create custom beer recipes.', link: 'https://brewnation.netlify.app/' },
+    { id: 2, title: 'Trojan Record Shop', image: '/images/project_1.jpg', description: 'E-commerce platform that brings the joy of vinyl records to collectors and music enthusiasts worldwide.', link: 'https://trojan-record-shop.vercel.app/' },
+    { id: 3, title: 'AI Logo Generator', image: '/images/project_1.jpg', description: 'Web application that allows users to create professional logos using AI.', link: 'https://ailogogen.netlify.app/' },
+    { id: 4, title: 'Weather Forecast', image: '/images/project_1.jpg', description: 'weather web application that allows users to check the current weather and forecast for a specific city.', link: 'https://weatherfore01.netlify.app/' },
+    { id: 5, title: 'Profile Sections Project', image: '/images/project_1.jpg', description: 'This project showcases several 3 section interactive web functionalities', link: 'https://profilesections.netlify.app/' },
+    { id: 6, title: 'Project 6', image: '/images/project_1.jpg', description: 'Brand identity design', link: 'https://yourprojectlink1.com' },
   ];
 
   return (
@@ -140,27 +138,39 @@ const Home = () => {
       <section className="py-20 bg-background">
           <Container>
             <h2 className="text-4xl mb-8 text-center">Featured Projects</h2>
+
+            <div className="hide-scrollbar overflow-x-scroll w-full hidden relative lg:block">
             <div 
               ref={scrollRef}
               onWheel={handleWheel}
-              className="flex overflow-x-auto hide-scrollbar gap-6 mb-8 pb-4"
-              style={{ scrollBehavior: 'smooth' }}
+              className="flex gap-6 mb-8 pb-4"
+              style={{ 
+                '--mp-horizontal-scroll--item-width': 'calc(90% - 1rem)',
+                '--mp-horizontal-scroll--item-width--desktop': 'calc(33.3333% - 1.5rem)',
+                '--mp-horizontal-scroll--item-max-width': '20rem',       '--mp-horizontal-scroll--item-max-width--desktop': '24rem',
+                scrollBehavior: 'smooth',
+                padding: 0, }}
             >
               {projects.map((project) => (
                 <motion.div
                   key={project.id}
-                  className="flex-none w-[400px]"
+                  className="flex-none"
+                  style={{
+                    width: 'var(--mp-horizontal-scroll--item-width)',
+                    maxWidth: 'var(--mp-horizontal-scroll--item-max-width)'
+                  }}
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
+
                 >
-                  <div className="relative group">
+                  <div className="relative group overflow-hidden rounded-xl">
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-[1.02] cursor-pointer"
+                      className="w-full h-[400px] object-cover rounded-xl transition-transform duration-300 group-hover:scale-110 cursor-pointer"
                     />
-                    <div className="absolute bottom-0 left-0 p-4 rounded-br-lg">
+                    <div className="absolute bottom-0 left-0 p-4 rounded-br-xl">
                       <h3 className="text-[#E8F2F5] text-3xl font-bold">{project.title}</h3>
                       <p className="text-[#E8F2F5] text-xl font-light">{project.description}</p>
                     </div>
@@ -168,6 +178,7 @@ const Home = () => {
                 </motion.div>
               ))}
             </div>
+          </div>
             <div className="text-center">
               <Link to="/projects">
                 <Button variant="primary" size="lg" className="d-inline-flex align-items-center">

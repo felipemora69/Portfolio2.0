@@ -51,12 +51,23 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+/* -------------------------- Slides in Projects page */
 .project-card {
   transition: transform 0.3s ease-in-out;
 }
 
 .project-card:hover {
   transform: scale(1.05);
+}
+
+/* ---------------------- Slides in home page */
+
+.w-full {
+  width: 100%;
+}
+
+.hidden {
+  display: block;
 }
 
 /* -------------------------- Icon Footer */
@@ -109,6 +120,10 @@ h1, h2, h3, h4, h5, h6 {
 .hide-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 
 /* -----------About me img hover */
