@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
-import Collaboration from './pages/collaboration';
+import Collaboration from './pages/Collaboration';
 import Aboutme from './pages/Aboutme';
 import './index.css';
 
