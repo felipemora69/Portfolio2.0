@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Navbar as BsNavbar, Container, Nav } from 'react-bootstrap';
-import logo from '../assets/images/m-logo.png';
+import logo from '/images/m-logo.png';
 
 const Navbar = () => {
   const location = useLocation();

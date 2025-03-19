@@ -1,10 +1,12 @@
-import React, { useRef } from 'react';
-import { Container, Row, Col, Button, Form, Carousel } from 'react-bootstrap';
+import React, { useRef, useState } from 'react';
+import { Container, Row, Col, Button, Form } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import ThreeScene from '../components/ThreeScene';
 
 const Home = () => {
+  const [showFullText, setShowFullText] = useState(false);
+
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
@@ -29,6 +31,11 @@ const Home = () => {
     { id: 6, title: 'Project 6', image: '/images/project_1.jpg', description: 'Brand identity design', link: 'https://yourprojectlink1.com' },
   ];
 
+  // State for "See More"
+  const toggleText = () => {
+    setShowFullText(!showFullText);
+  };
+
   return (
     <div>
       {/* Hero Section */}
@@ -50,18 +57,18 @@ const Home = () => {
                 className="flex justify-center items-center flex-col space-y-4"
               >
                 <img
-                  src="src/assets/images/tat.logo.png"
+                  src="/images/tat.logo.png"
                   alt="Hero"
                   style={{ width: '200px', height: 'auto' }}
                 />
                 <div className="flex justify-between w-full">
                   <img
-                    src="src/assets/images/m-logo.png"
+                    src="/images/m-logo.png"
                     alt="Left Image"
                     style={{ width: '250px', height: 'auto' }}
                   />
                   <img
-                    src="src/assets/images/joya-logo.png"
+                    src="/images/joya-logo.png"
                     alt="Right Image"
                     style={{ width: '200px', height: 'auto' }}
                   />
@@ -82,25 +89,41 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-20 bg-white">
+      <section className="about-me py-20 bg-white">
         <Container>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            <Row className="align-items-center relative">
-              <Col md={6}>
-                <div className="relative z-10 bg-[#B2CAC9] p-6 rounded-lg shadow-md mb-6" style={{ position: 'absolute', top: '5%', left: '0', right: '0', width: '55%' }}>
+            <Row className="about-me-row align-items-center relative">
+              <Col md={6} className="about-me-text-container">
+                <div className="about-me-text bg-[#B2CAC9] p-6 rounded-lg shadow-md mb-6">
                   <h2 className="text-4xl mb-1">About Me</h2>
                   <p className="mb-1">
                     Hi, I'm Felipe.
                   </p>
                   <p className=" mb-1 text-justify font-light">
-                  I'm currently in my last semester of a Software Development diploma at Bow Valley College. With a Bachelor of Business Administration and 6 years of experience managing multiple responsibilities, I am passionate about coding, problem-solving, and continuous learning. I specialize in web development, focusing on user experience, responsive design, and performance optimization.<br></br>
-                  My expertise includes data visualization, project management, and creating user-friendly, data-driven web interfaces. I have strong data analytics skills, with experience in market research, trend analysis, and predictive insights. I also have a solid background in improving data workflows to ensure accuracy and consistency in many industries.
-                  Beyond technology, I am passionate about art and design, believing that logos, images, and graphics can communicate culture, identity, and user interaction like a work of art.
+                  I'm currently in my last semester of a Software Development diploma at Bow Valley College. With a Bachelor of Business Administration and 6 years of experience managing multiple responsibilities, I am passionate about coding, problem-solving, and continuous learning. I specialize in web development, focusing on user experience, responsive design, and performance optimization.
+                    {/* Truncated text */}
+                    {showFullText && (
+                      <>
+                        <br />
+                        My expertise includes data visualization, project management, and creating user-friendly, data-driven web interfaces. I have strong data analytics skills, with experience in market research, trend analysis, and predictive insights. I also have a solid background in improving data workflows to ensure accuracy and consistency in many industries.
+                        <br />
+                        Beyond technology, I am passionate about art and design, believing that logos, images, and graphics can communicate culture, identity, and user interaction like a work of art.
+                      </>
+                    )}
                   </p>
+                  {/* See More Toggle */}
+                  <div className="mt-3">
+                    <span
+                      className="see-more-text cursor-pointer text-blue-600"
+                      onClick={toggleText}
+                    >
+                      {showFullText ? 'See Less' : '... See More'}
+                    </span>
+                  </div>
 
                   {/* See More Button */}
                   <div className="mt-3">
@@ -109,13 +132,13 @@ const Home = () => {
                     </p>
                     <Link to="/aboutme">
                       <Button variant="primary" size="md" className="d-inline-flex align-items-center see-more-btn">
-                        See More
+                        About me
                       </Button>
                     </Link>
                   </div>
                 </div>
               </Col>
-              <Col md={6} className="relative">
+              <Col md={6} className="image-container">
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -135,7 +158,7 @@ const Home = () => {
       </section>
 
       {/* Featured Projects Section */}
-      <section className="py-20 bg-background">
+      <section className="featured py-20 bg-background">
           <Container>
             <h2 className="text-4xl mb-8 text-center">Featured Projects</h2>
 
@@ -164,6 +187,7 @@ const Home = () => {
                   viewport={{ once: true }}
 
                 >
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
                   <div className="relative group overflow-hidden rounded-xl">
                     <img
                       src={project.image}
@@ -175,6 +199,7 @@ const Home = () => {
                       <p className="text-[#E8F2F5] text-xl font-light">{project.description}</p>
                     </div>
                   </div>
+                  </a>
                 </motion.div>
               ))}
             </div>
@@ -196,7 +221,7 @@ const Home = () => {
           <Row>
             <Col md={6}>
               <h2 className="text-4xl mb-3">Let's Work Together</h2>
-              <div className="mb-3" style={{ top: '2175px', left: '-50px', position: 'absolute', height: '610px', width: '1380px' }}>
+              <div className="three-scene-container mb-3">
                 <ThreeScene />
               </div>
             </Col>

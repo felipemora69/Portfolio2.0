@@ -41,7 +41,7 @@ const Projects = () => {
       id: 5,
       title: 'Profile Sections Project',
       image: 'https://source.unsplash.com/800x600/?portfolio',
-      description: 'This project showcases several interactive web functionalities such as displaying profile pictures with delayed name display, updating the current date and time in real-time, converting numerical grades to letter grades, sorting staff members in a table, and converting temperatures between Celsius and Fahrenheit.',
+      description: 'This project showcases several interactive web functionalities such as updating the current date and time in real-time, converting numerical grades to letter grades, and converting temperatures between Celsius and Fahrenheit.',
       link: 'https://profilesections.netlify.app/'
     },
     {

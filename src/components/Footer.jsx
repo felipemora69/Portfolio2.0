@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Github, Linkedin, Instagram } from 'lucide-react';
-import logo from '../assets/images/m-white-logo.png';
+import logo from '/images/m-white-logo.png';
 
 const Footer = () => {
   return (

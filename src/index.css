@@ -45,13 +45,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-section {
-  min-height: 80vh;
   background-size: cover;
   background-position: center;
   position: relative;
 }
 
-/* -------------------------- Slides in Projects page */
+/* -------------------------- Project Cards in Projects page */
 .project-card {
   transition: transform 0.3s ease-in-out;
 }
@@ -109,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .custom-padding {
   padding-top: 8rem;
-  padding-bottom: 6.6rem;
+  padding-bottom: 6.7rem;
 }
 
 /* ------------------Hide the scroll bar featured projects section */
@@ -126,11 +125,28 @@ h1, h2, h3, h4, h5, h6 {
   overflow-x: scroll;
 }
 
-/* -----------About me img hover */
-.img-about:hover {
-  transform: scale(0.95);
-  transition: transform 0.3s ease-in-out;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+/* ---------------About me section */
+/* ----------"See More" text */
+.see-more-text {
+  color: var(--primary);
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.see-more-text:hover {
+  color: var(--dark);
+}
+
+/* ---------------------ThreeScene style */
+
+.three-scene-container {
+  position: absolute;
+  top: 2175px;
+  left: -50px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
 
 /* ----------Button Style */
@@ -165,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-block: 0.6em;
   color: #fff;
   font-weight: bold;
-  font-size: 0.9em;
+  font-size: 0.8em;
   background: var(--primary);
   transition: all 0.2s;
   border-radius: 3px;
@@ -197,5 +213,55 @@ h1, h2, h3, h4, h5, h6 {
 @keyframes dance6123 {
   to {
     background-position: var(--width);
+  }
+}
+
+/* -----------------Mobile size */
+@media (max-width: 768px) {
+  .about-me {
+    padding: 20px;
+  }
+
+  .about-me h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-me p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 1rem;
+  }
+
+  .about-me img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    
+  }
+
+  .about-me-text {
+    padding: 1rem;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-me-text p {
+    font-size: 0.85rem;
+  }
+
+  .about-me-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .see-more-text {
+    font-size: 0.85rem;
+  }
+  .three-scene-container {
+    top: 2654px;
+    left: 0;
+    height: 670px;
+    width: 480px;
   }
 }
