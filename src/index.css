@@ -296,16 +296,15 @@ h1, h2, h3, h4, h5, h6 {
   .three-scene-container {
     top: 2654px;
     left: 0;
-    height: 670px;
-    width: 480px;
+    height: 650px;
+    width: 100%;
   }
 
   .three-scene-collab {
     top: 70px;
     left: 0;
-    position: absolute;
     height: 743px;
-    width: 480px;
+    width: 100%;
   }
 
   .nav-link:hover::after {
@@ -314,9 +313,9 @@ h1, h2, h3, h4, h5, h6 {
 
   .aboutme-img{
     width: 400px;
-    height: 300px;
+    height: auto;
     border-radius: 8px;
-    margin-left: 30px;
+    margin-left: 0;
   }
   
 }
