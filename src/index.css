@@ -265,12 +265,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .about-me h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-align: center;
   }
 
   .about-me p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     text-align: justify;
     margin-bottom: 1rem;
@@ -326,6 +326,6 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .hero-img {
-    width: 100px;
+    width: 115px;
   }
 }
