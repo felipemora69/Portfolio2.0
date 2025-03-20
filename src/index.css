@@ -69,6 +69,13 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+/* -------------------------- Hero section styles */
+
+.hero-img {
+  width: 200px;
+  height: auto;
+}
+
 /* -------------------------- Project Cards in Projects page */
 .project-card {
   transition: transform 0.3s ease-in-out;
