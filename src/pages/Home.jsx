@@ -23,12 +23,12 @@ const Home = () => {
   };
 
   const projects = [
-    { id: 1, title: 'BrewNation', image: '/images/project_1.jpg', description: 'Web application that allows users to create custom beer recipes.', link: 'https://brewnation.netlify.app/' },
-    { id: 2, title: 'Trojan Record Shop', image: '/images/project_1.jpg', description: 'E-commerce platform that brings the joy of vinyl records to collectors and music enthusiasts worldwide.', link: 'https://trojan-record-shop.vercel.app/' },
-    { id: 3, title: 'AI Logo Generator', image: '/images/project_1.jpg', description: 'Web application that allows users to create professional logos using AI.', link: 'https://ailogogen.netlify.app/' },
-    { id: 4, title: 'Weather Forecast', image: '/images/project_1.jpg', description: 'weather web application that allows users to check the current weather and forecast for a specific city.', link: 'https://weatherfore01.netlify.app/' },
-    { id: 5, title: 'Profile Sections Project', image: '/images/project_1.jpg', description: 'This project showcases several 3 section interactive web functionalities', link: 'https://profilesections.netlify.app/' },
-    { id: 6, title: 'Project 6', image: '/images/project_1.jpg', description: 'Brand identity design', link: 'https://yourprojectlink1.com' },
+    { id: 1, title: 'BrewNation', image: 'https://images.unsplash.com/photo-1567696911980-2eed69a46042?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', description: 'Web application that allows users to create custom beer recipes.', link: 'https://brewnation.netlify.app/' },
+    { id: 2, title: 'Trojan Record Shop', image: 'https://images.unsplash.com/photo-1549477606-43a329b26066?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', description: 'E-commerce platform that brings the joy of vinyl records to collectors.', link: 'https://trojan-record-shop.vercel.app/' },
+    { id: 3, title: 'ILRCC Client', image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1510&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', description: 'Client project that improve the back and front of the website.', link: 'https://yourprojectlink1.com' },
+    { id: 4, title: 'AI Logo Generator', image: 'https://images.unsplash.com/photo-1547082299-de196ea013d6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', description: 'Web application that allows users to create professional logos using AI.', link: 'https://ailogogen.netlify.app/' },
+    { id: 5, title: 'Weather Forecast', image: 'https://images.unsplash.com/photo-1630260667842-830a17d12ec9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', description: 'weather web application that allows users to check the current weather.', link: 'https://weatherfore01.netlify.app/' },
+    { id: 6, title: 'Profile-Sections', image: 'https://images.unsplash.com/photo-1624296031259-87f8e19558cb?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', description: 'This project showcases several 3 section interactive web functionalities.', link: 'https://profilesections.netlify.app/' }
   ];
 
   // State for "See More"
@@ -194,9 +194,9 @@ const Home = () => {
                       alt={project.title}
                       className="w-full h-[400px] object-cover rounded-xl transition-transform duration-300 group-hover:scale-110 cursor-pointer"
                     />
-                    <div className="absolute bottom-0 left-0 p-4 rounded-br-xl">
+                    <div className="absolute bottom-0 left-0 p-4 rounded-br-xl bg-gradient-to-t from-black to-transparent w-full">
                       <h3 className="text-[#E8F2F5] text-3xl font-bold">{project.title}</h3>
-                      <p className="text-[#E8F2F5] text-xl font-light">{project.description}</p>
+                      <p className="text-[#E8F2F5] text-l font-light">{project.description}</p>
                     </div>
                   </div>
                   </a>

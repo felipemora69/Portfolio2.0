@@ -20,7 +20,7 @@ const Collaboration = () => {
 
         <Row className="align-items-center">
           <Col md={6}>
-            <div style={{ top: '70px', left: '-50px', position: 'absolute', height: '715px', width: '1380px' }}>
+            <div className="three-scene-collab mb-3">
               <ThreeScene />
             </div>
           </Col>

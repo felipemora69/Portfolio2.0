@@ -43,11 +43,10 @@ const Aboutme = () => {
             {/* Second Column - Placeholder for Image */}
             <Col md={6} className="mb-4">
               {/* Add image or content here in the future */}
-              <div className=''>
-                <img
+              <div>
+                <img className= "aboutme-img"
                   src="/images/section1.png"
                   alt="Section Image"
-                  style={{ width: '500px', height: '490px', borderRadius: '8px' }}
                 />
               </div>
             </Col>
@@ -59,10 +58,9 @@ const Aboutme = () => {
             <Col md={6} className="mb-4">
               {/* Add image or content here in the future */}
               <div>
-                <img
+                <img className= "aboutme-img"
                   src="/images/section2.jpg"
                   alt="Section Image"
-                  style={{ width: '600px', height: '500px', borderRadius: '8px' }}
                 />
               </div>
             </Col>
@@ -101,12 +99,10 @@ const Aboutme = () => {
 
             {/* Second Column - Placeholder for Image */}
             <Col md={6} className="mb-4">
-              {/* Add image or content here in the future */}
               <div>
-                <img
+                <img className= "aboutme-img"
                   src="/images/section3.png"
                   alt="Section Image"
-                  style={{ width: '500px', height: '420px', borderRadius: '8px' }}
                 />
               </div>
             </Col>
