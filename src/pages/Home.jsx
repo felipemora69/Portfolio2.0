@@ -56,18 +56,18 @@ const Home = () => {
                 transition={{ duration: 0.8 }}
                 className="flex justify-center items-center flex-col space-y-4"
               >
-                <img
+                <img className="hero-img"
                   src="/images/tat.logo.png"
                   alt="Hero"
                   style={{ width: '200px', height: 'auto' }}
                 />
                 <div className="flex justify-between w-full">
-                  <img
+                  <img className="hero-img"
                     src="/images/m-logo.png"
                     alt="Left Image"
                     style={{ width: '250px', height: 'auto' }}
                   />
-                  <img
+                  <img className="hero-img"
                     src="/images/joya-logo.png"
                     alt="Right Image"
                     style={{ width: '200px', height: 'auto' }}
