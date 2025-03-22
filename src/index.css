@@ -289,18 +289,17 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
   }
 
-  /* .about-me-text p {
-    font-size: 2rem;
+  .about-me-text p {
+    font-size: 3rem;
   }
 
   .about-me-text h2 {
-    font-size: 3rem;
-  } */
+    font-size: 4rem;
+  }
 
-  /* .see-more-text {
-    font-size: 0.85rem;
-  } */
-
+  .see-more-text {
+    font-size: 1rem;
+  }
   .three-scene-container {
     top: 2660px;
     left: 0;
