@@ -267,14 +267,12 @@ h1, h2, h3, h4, h5, h6 {
   /* .about-me h2 {
     font-size: 2.5rem;
     text-align: center;
-  }
+  } */
 
   .about-me p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.6;
-    text-align: justify;
-    margin-bottom: 1rem;
-  } */
+  }
 
   .about-me img {
     width: 100%;
@@ -289,12 +287,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
   }
 
-  .about-me-text p {
-    font-size: 1rem;
-  }
-
   .see-more-text {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .three-scene-container {
     top: 2660px;
