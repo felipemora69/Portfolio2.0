@@ -270,10 +270,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .about-me p {
-    font-size: 1.4rem;
-    line-height: 1.6;
-    text-align: justify;
-    margin-bottom: 1rem;
+    
   }
 
   .about-me img {
@@ -290,11 +287,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .about-me-text p {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 
   .about-me-text h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .see-more-text {
