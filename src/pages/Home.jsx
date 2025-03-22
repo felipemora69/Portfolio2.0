@@ -100,7 +100,7 @@ const Home = () => {
                   <p className="mb-1">
                     Hi, I'm Felipe.
                   </p>
-                  <p className=" mb-1 text-justify font-light">
+                  <p className="ptext mb-1 text-justify font-light">
                   I'm currently in my last semester of a Software Development diploma at Bow Valley College. With a Bachelor of Business Administration and 6 years of experience managing multiple responsibilities, I am passionate about coding, problem-solving, and continuous learning. I specialize in web development, focusing on user experience, responsive design, and performance optimization.
                     {/* Truncated text */}
                     {showFullText && (
