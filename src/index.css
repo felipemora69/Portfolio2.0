@@ -290,15 +290,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .about-me-text p {
-    font-size: 0.85rem;
+    font-size: 1.5rem;  
   }
 
   .about-me-text h2 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .see-more-text {
-    font-size: 0.85rem;
+    font-size: 1.5rem;
   }
   .three-scene-container {
     top: 2660px;
