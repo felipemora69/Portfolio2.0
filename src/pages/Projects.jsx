@@ -54,27 +54,27 @@ const Projects = () => {
     {
       id: 7,
       title: 'UI Projects',
-      image: 'https://images.unsplash.com/photo-1624296031259-87f8e19558cb?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      description: 'The database is designed to manage customer accounts, employee information, loan processing, and branch management.',
-      link: 'https://profilesections.netlify.app/'
+      image: 'https://plus.unsplash.com/premium_photo-1683133924436-a7afbdf8cd25?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      description: 'This website features a collection of mya UI design works, including rsponsive web design, mobile app interfaces, and interactive prototypes.',
+      link: 'https://felipeuiprojects.netlify.app/'
     },
     {
       id: 8,
-      title: 'Bank Database Project',
-      image: 'https://images.unsplash.com/photo-1624296031259-87f8e19558cb?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      title: 'Kotlin Android Studio Projects',
+      image: 'https://images.unsplash.com/photo-1580860749755-f49eb5509d55?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       description: 'The database is designed to manage customer accounts, employee information, loan processing, and branch management.',
       link: 'https://yourprojectlink4.com'
     },
     {
       id: 9,
       title: 'Bank Database Project',
-      image: 'https://images.unsplash.com/photo-1624296031259-87f8e19558cb?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      image: 'https://plus.unsplash.com/premium_photo-1664297989345-f4ff2063b212?q=80&w=1398&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       description: 'The database is designed to manage customer accounts, employee information, loan processing, and branch management.',
       link: 'https://yourprojectlink4.com'
     },
     {
       id: 10,
-      title: 'Bank Database Project',
+      title: 'Project 10',
       image: 'https://images.unsplash.com/photo-1624296031259-87f8e19558cb?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       description: 'The database is designed to manage customer accounts, employee information, loan processing, and branch management.',
       link: 'https://yourprojectlink4.com'
